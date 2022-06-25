@@ -13,7 +13,7 @@
       #titulo, #comeco{
           text-align: center;
       }
-      #botoes{
+      #botao{
           margin-top: 5%;
           text-align: center;
       }
@@ -43,19 +43,19 @@
             <span style="color: white;"><h2>Em relação ao Real R$</h2></span>
         </div>
     </div>
-    <div class="row" id="botoes">
+    <div class="row" >
         <div class="col">
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-dark btn-lg">
-                    <input type="radio" name="options" id="cotar" autocomplete="off" checked> Dolar
-                </label>
-                <label class="btn btn-dark btn-lg">
-                    <input type="radio" name="options" id="cotar2" autocomplete="off"> Euro
-                </label>
-                <label class="btn btn-dark btn-lg">
-                    <input type="radio" name="options" id="cotar3" autocomplete="off"> Bitcoin
-                </label>
-            </div>
+            <select id="select" class="form-control form-control-lg" label="Selecione">
+                <option selected>Selecione</option>
+                <option value="cotar1">Dolar</option>
+                <option value="cotar2">Euro</option>
+                <option value="cotar3">Bitcoin</option>
+            </select>
+        </div>
+    </div>
+    <div class="row" id="botao">
+        <div class="col">
+            <button id="cotar" type="button" class="btn btn-dark btn-lg">Cotar</button>
         </div>
     </div>
     <div class="row">
